@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 书架 -->
+  <rect x="30" y="180" width="220" height="380" rx="10" fill="#deb887"/>
+  
+  <!-- 书架上的隔板 -->
+  <rect x="50" y="200" width="160" height="10" rx="2" fill="#8b4513"/>
+  <rect x="60" y="320" width="140" height="10" rx="2" fill="#8b4513"/>
+  
+  <!-- 书籍 -->
+  <rect x="70" y="220" width="30" height="90" rx="2" fill="#ff6b6b"/>
+  <rect x="110" y="230" width="30" height="80" rx="2" fill="#4ecdc4"/>
+  <rect x="150" y="210" width="30" height="100" rx="2" fill="#45b7d1"/>
+  
+  <rect x="70" y="340" width="25" height="70" rx="2" fill="#f7dc6f"/>
+  <rect x="105" y="350" width="35" height="60" rx="2" fill="#bb8fce"/>
+  <rect x="150" y="345" width="25" height="65" rx="2" fill="#85c1e9"/>
+  
+  <!-- 植物 -->
+  <ellipse cx="190" cy="210" rx="40" ry="50" fill="#82e0aa"/>
+  <rect x="185" y="260" width="10" height="40" fill="#7d8c4b"/>
+  
+  <!-- 桌子 -->
+  <rect x="30" y="480" width="740" height="120" rx="10" fill="#f5deb3" filter="url(#shadow)"/>
+  <rect x="250" y="530" width="300" height="70" rx="10" fill="#f0e68c"/>
+  
+  <!-- 孩子 -->
+  <ellipse cx="350" cy="350" rx="80" ry="130" fill="#ffcccb"/>
+  
+  <!-- 卷发 -->
+  <path d="M270,320 Q350,220 430,320 Q390,290 350,280 Q310,290 270,320 Z" fill="#8b5a2b"/>
+  
+  <!-- 脸部 -->
+  <circle cx="350" cy="350" r="60" fill="#ffcccb"/>
+  
+  <!-- 闭着的眼睛和微笑 -->
+  <path d="M320,340 Q330,350 340,340" stroke="#000" stroke-width="2" fill="none"/>
+  <path d="M360,340 Q370,350 380,340" stroke="#000" stroke-width="2" fill="none"/>
+  <path d="M330,370 Q350,385 370,370" stroke="#000" stroke-width="2" fill="none"/>
+  
+  <!-- 举起的手臂和手 -->
+  <ellipse cx="280" cy="380" rx="30" ry="60" fill="#ffcccb"/>
+  <circle cx="260" cy="350" r="25" fill="#ffcccb"/>
+  
+  <!-- 手指 -->
+  <rect x="265" y="320" width="6" height="30" rx="3" fill="#ffcccb"/>
+  <rect x="275" y="325" width="6" height="25" rx="3" fill="#ffcccb"/>
+  <rect x="285" y="330" width="6" height="20" rx="3" fill="#ffcccb"/>
+  <rect x="255" y="335" width="6" height="15" rx="3" fill="#ffcccb"/>
+  
+  <!-- 红色背心 -->
+  <path d="M290,450 L300,520 L320,530 L380,530 L400,520 L410,450 Z" fill="#e74c3c"/>
+  
+  <!-- 白色T恤 -->
+  <rect x="290" y="420" width="120" height="30" fill="#ffffff"/>
+  
+  <!-- 平板电脑 -->
+  <rect x="500" y="490" width="180" height="220" rx="10" fill="#2c3e50" filter="url(#shadow)"/>
+  <rect x="510" y="500" width="160" height="200" rx="5" fill="#ecf0f1"/>
+  
+  <!-- 平板支架 -->
+  <path d="M550,610 L590,610 L610,580 L590,570 L550,570 L530,580 Z" fill="#deb887"/>
+  
+  <!-- 笔记本 -->
+  <rect x="430" y="560" width="140" height="90" rx="5" fill="#8b4513"/>
+  <rect x="430" y="565" width="140" height="3" rx="1" fill="#cd5c5c"/>
+</svg>
