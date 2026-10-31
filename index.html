@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelly's English Class | Clase de Inglés Kelly</title>
     <link rel="canonical" href="https://www.jinduo.xyz">
+    <script>
+        // If the user already accepted cookies, mark the document early so the
+        // banner never flashes before the main script runs.
+        if (localStorage.getItem('cookieConsent') === 'accepted') {
+            document.documentElement.classList.add('cookie-accepted');
+        }
+    </script>
     <style>
         /* Language Switcher Styles */
         .language-switcher {
@@ -230,6 +237,16 @@
               <p data-lang="es" style="display:none;">&copy; 2024 Clase de Inglés Kelly. Todos los derechos reservados.</p>
           </div>
       </footer>
+
+      <!-- Cookie Consent Banner -->
+      <div id="cookie-banner" class="cookie-banner">
+          <p class="cookie-text" data-lang="en">This website uses cookies to ensure you get the best experience. By clicking &ldquo;Accept&rdquo;, you consent to the use of cookies. <a href="1.pdf" target="_blank" class="cookie-link">Legal Notice</a></p>
+          <p class="cookie-text" data-lang="es" style="display:none;">Este sitio web utiliza cookies para garantizar la mejor experiencia. Al hacer clic en &ldquo;Aceptar&rdquo;, aceptas el uso de cookies. <a href="1.pdf" target="_blank" class="cookie-link">Aviso Legal</a></p>
+          <button id="cookie-accept" class="cookie-btn">
+              <span data-lang="en">Accept</span>
+              <span data-lang="es" style="display:none;">Aceptar</span>
+          </button>
+      </div>
 
       <script src="script.js"></script>
       <script>

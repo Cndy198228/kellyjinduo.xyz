@@ -60,11 +60,31 @@ function initializeAnimation() {
     });
 }
 
+// Cookie consent banner: show it until the user accepts, then remember the choice
+function initCookieBanner() {
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('cookie-accept');
+    if (!banner || !acceptBtn) return;
+
+    // Already accepted: keep it hidden (class was already set in <head>)
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+        document.documentElement.classList.add('cookie-accepted');
+        return;
+    }
+
+    // On accept: hide the banner and persist the choice
+    acceptBtn.addEventListener('click', function () {
+        document.documentElement.classList.add('cookie-accepted');
+        localStorage.setItem('cookieConsent', 'accepted');
+    });
+}
+
 // Initialize all features when page loads
 function initializeWebsite() {
     enhanceButtonInteractions();
     initializeAnimation();
     animateOnScroll(); // Run once immediately
+    initCookieBanner();
     
     // Add scroll event listener for animations
     window.addEventListener('scroll', animateOnScroll);
